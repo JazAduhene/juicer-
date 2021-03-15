@@ -1,0 +1,28 @@
+body {
+    background-Color: #fff;
+    font-family: Helvetica;
+}
+
+.container {
+    display: grid;
+}
+
+.features {
+    background-color: #fff;
+    height: 600px;
+}
+
+.why {
+    background-color: #0091AD;
+    height: 800px;
+}
+
+.pricing {
+    background-color: #C9D3E4;
+    height: 800px;
+}
+
+.contact-us {
+    background-color: #fff;
+    height: 150px;
+}
