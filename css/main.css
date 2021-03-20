@@ -5,7 +5,14 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .navbar,
@@ -14,6 +21,10 @@ body {
     padding-bottom: 10px;
     padding-left: 30px;
     padding-top: 20px;
+}
+
+.hamburger {
+    padding-right: 30px;
 }
 
 .main-nav {
@@ -56,10 +67,6 @@ body {
     display: block;
 }
 
-.hamburger {
-    padding-right: 30px;
-}
-
 /* Main section */
 
 #features {
@@ -68,16 +75,56 @@ body {
     height: 600px;
 }
 
+#section-1 {
+    display: flex;
+    flex-direction: column;
+    margin: 52px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+#box-1 {
+    align-items: center;
+}
+
+.juice-pic {
+    max-width: 100%;
+    height: auto;
+}
+
+#box-2 {
+    width: 100%;
+    height: 50%;
+}
+
+#slogan-1 {
+    color: #0091AD;
+    font-size: 55px;
+}
+
+#slogan-2 {
+    color: #B24646;
+    font-size: 55px;
+}
+
 #why {
     background-color: #0091AD;
     grid-area: section-2;
     height: 600px;
 }
 
+#section-2 {
+    display: flex;
+}
+
 #pricing {
     background-color: #C9D3E4;
     grid-area: section-3;
     height: 1000px;
+}
+
+#section-3 {
+    display: flex;
 }
 
 footer {
@@ -95,7 +142,6 @@ footer {
       "section-2"
       "section-3"
       "footer";
-
 }
 
 /* Footer */
@@ -160,6 +206,10 @@ footer {
 
     /* Main section */
 
+    #features {
+        height: 750px;
+    }
+
     #pricing {
         height: 700px;
     }
@@ -175,5 +225,35 @@ footer {
         font-size: x-large;
         font-weight: 500;
     }
+    
+    .sign-in-button {
+        border-radius: 4px;
+        background-color: #B24646; /* Green */
+        border: none;
+        color: white;
+        padding: 6px 25px 6px 25px;
+        font-size: 18px;
+        cursor: pointer;
+        text-align: center;
+        margin-top: -10px;
+    }    
+    
+    #section-1 {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 52px;
+        margin-top: 300px;
+    }
+    
+   /* #box-1 {
+        width: 30%;
+        height: 50%;
+    } 
 
+    #box-2 {
+        width: 100%;
+        height: 50%;
+    }  */
+    
+  
 }
