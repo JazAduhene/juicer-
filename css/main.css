@@ -8,6 +8,8 @@ body {
     font-family: Helvetica;
 }
 
+/* Navbar */
+
 header {
     position: fixed;
     width: 100%;
@@ -51,9 +53,10 @@ header {
 
 .logo {
     display: inline-block;
-    font-size: xx-large;
+    font-size: 35px;
     margin-top: 10px;
     margin-left: 20px;
+    font-weight: 500;
 }
 
 .navbar-toggle {
@@ -62,14 +65,15 @@ header {
     right: 20px;
     cursor: pointer;
     color:  #B24646;
-    font-size: 24px;
+    font-size:hid 24px;
 }
 
 .active {
     display: block;
 }
 
-.sign-in-button { 
+.sign-in-button {
+    
 }
 
 /* Features section */
@@ -171,13 +175,99 @@ footer {
       "footer";
 }
 
+/* Sign In Page */
+
+.logo-2 {
+    text-decoration: none;
+}
+
+.logo-sign-in {
+    text-align: center;
+    color: #B24646;
+    margin-top: 100px;
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+.sign-in {
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.sign-in-form {
+    display: flex;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.email-password {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.login-button {
+    margin-top: 10px;
+    visibility: visible;
+    border-radius: 4px;
+    background-color: #B24646; 
+    border: none;
+    color: white;
+    padding: 6px 110px 6px 110px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.password-account {
+    cursor: pointer;
+}
+
+.forgotten-password {
+    margin-top: 15px;
+    color: #858383;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.create-account {
+    margin-top: 5px;
+    color: #B24646;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#email {
+    width: 250px;
+    height: 20px;
+}
+
+#password {
+    width: 250px;
+    height: 20px;
+}
+
 /* .social-icons {
     float: right;
 } */
 
 /* For Tablets */
-@media only screen and (min-width: 500px) { 
+@media only screen and (min-width: 600px) { 
+
+    .forgotten-password {
+        color: #B24646;
+    }
 }
+
+
 
 /* For Desktop */
 @media only screen and (min-width: 1000px) {
@@ -225,6 +315,7 @@ footer {
     }
 
     .sign-in-button {
+        visibility: visible;
         border-radius: 4px;
         background-color: #B24646; 
         border: none;
@@ -239,6 +330,10 @@ footer {
 
     .sign-in-button:hover {
         transform: scale(1.1);
+    }
+
+    .sign-in-mobile {
+        display: none !important;
     }
     
     #section-1 {
@@ -289,5 +384,5 @@ footer {
         font-size: x-large;
         font-weight: 500;
     }
-    
+
 }
