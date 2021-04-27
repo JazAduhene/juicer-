@@ -65,7 +65,7 @@ header {
     right: 20px;
     cursor: pointer;
     color:  #B24646;
-    font-size:hid 24px;
+    font-size: 24px;
 }
 
 .active {
@@ -98,9 +98,10 @@ header {
 }
 
 .juice-pic {
-    max-width: 50%;
+    min-width: 75%;
+    max-width: 60%;
     height: auto;
-}
+} 
 
 #box-2 {
     width: 100%;
@@ -109,12 +110,16 @@ header {
 
 #slogan-1 {
     color: #0091AD;
-    font-size: 55px;
+    font-size: 5.5vh;
+    font-weight: 400;
+    margin-top: 20px;
 }
 
 #slogan-2 {
     color: #B24646;
-    font-size: 55px;
+    font-size: 5.5vh;
+    font-weight: 400;
+    margin-top: 8px;
 }
 
 /* Why section */
@@ -122,11 +127,42 @@ header {
 #why {
     background-color: #0091AD;
     grid-area: section-2;
-    height: 600px;
+    height: 720px;
 }
 
-#section-2 {
+.section-2 {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 50px;
+    color: white;
+}
+
+#box-4 {
+    margin-top: 50px;
+}
+
+#box-5 {
+    margin-top: 50px;
+}
+
+.product-description {
+    margin-top: 7px;
+}
+
+#box-6 {
+    width: auto;
+    height: auto;
+    margin-top: 60px;
+}
+
+.juicer-pic {
+    min-width: 65%;
+    max-width: 60%;
+    height: auto;
 }
 
 /* Pricing section */
@@ -134,18 +170,82 @@ header {
 #pricing {
     background-color: #C9D3E4;
     grid-area: section-3;
-    height: 1000px;
+    height: 1180px;
 }
 
 #section-3 {
     display: flex;
+    flex-direction: column;
+}
+
+.card {
+ text-align: center;
+ background-color: white;
+ margin-top: 50px;
+ margin-right: 75px;
+ margin-left: 75px;
+ height: 39vh;
+ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ border-radius: 10px;
+}
+
+.title {
+    margin-top: 25px;
+    color:#0091AD;
+}
+
+.card-info {
+    margin-top: 25px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #4F6283;
+}
+
+.card-info li {
+    margin: 20px 0;
+}
+
+.price {
+    color: #0091AD;
+}
+
+.card-button {
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #B24646; 
+    border: none;
+    color: white;
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+
+}
+
+.card-button:hover {
+    transform: scale(0.9);
+    background-color: #9C2F2F;
 }
 
 /* Footer Section*/
 
 footer {
     grid-area: footer;
-    height: 100px;
+    height: 150px;
+}
+
+.social-media-links {
+    flex-direction: row;
+}
+
+.social-media-links a {
+    text-decoration: none;
+}
+
+.social-links {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
 }
 
 .contact-us {
@@ -197,10 +297,10 @@ footer {
 }
 
 .sign-in-form {
-    display: flex;
     display: block;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 35px;
+    width: 100%;
 }
 
 form {
@@ -208,6 +308,10 @@ form {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+}
+
+#email {
+    /* height: 50px; */
 }
 
 .email-password {
@@ -266,8 +370,6 @@ form {
         color: #B24646;
     }
 }
-
-
 
 /* For Desktop */
 @media only screen and (min-width: 1000px) {
