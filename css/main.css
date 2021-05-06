@@ -81,7 +81,7 @@ header {
 #features {
     background-color: white;
     grid-area: section-1;
-    height: 600px;
+    /* height: 500px; */
 }
 
 #section-1 {
@@ -90,16 +90,12 @@ header {
     margin: 52px;
     margin-top: 150px;
     text-align: center;
-}
-
-#box-1 {
-    width: auto;
-    height: auto;
+    /* background-color: red; */
 }
 
 .juice-pic {
-    min-width: 75%;
-    max-width: 60%;
+    min-width: 70%;
+    max-width: 50%;
     height: auto;
 } 
 
@@ -170,7 +166,6 @@ header {
 #pricing {
     background-color: #C9D3E4;
     grid-area: section-3;
-    height: 1180px;
 }
 
 #section-3 {
@@ -181,7 +176,7 @@ header {
 }
 
 .card {
-    flex: grow;
+flex: grow;
  text-align: center;
  background-color: white;
  margin-top: 50px;
@@ -363,6 +358,33 @@ form {
 /* .social-icons {
     float: right;
 } */
+
+/* For Mobile under 400px */
+
+@media only screen and (max-width: 270px) { 
+
+    #slogan-1 {
+        font-size: 3vh;
+    }
+
+    #slogan-2 {
+        font-size: 3vh;
+    }
+}
+
+/* For Mobile under 360px */
+
+@media only screen and (max-width: 360px) { 
+
+    #slogan-1 {
+        font-size: 4vh;
+    }
+
+    #slogan-2 {
+        font-size: 4vh;
+    }
+}
+
 
 /* For Tablets */
 @media only screen and (min-width: 600px) { 
