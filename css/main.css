@@ -227,12 +227,12 @@ flex: grow;
 
 footer {
     grid-area: footer;
-    height: 150px;
-}
-
-.social-media-links {
     flex-direction: row;
 }
+
+/* .social-media-links {
+    flex-direction: row;
+} */
 
 .social-media-links a {
     text-decoration: none;
