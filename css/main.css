@@ -392,6 +392,21 @@ form {
     .forgotten-password {
         color: #B24646;
     }
+
+    #section-1 {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 100px;
+        margin-top: 150px;
+
+    }
+
+    .section-2 {
+        display: flex;
+        flex-direction: row-reverse;
+        color: white;
+    }
+    
 }
 
 /* For Desktop */
@@ -461,14 +476,7 @@ form {
         display: none !important;
     }
     
-    #section-1 {
-        display: flex;
-        flex-direction: row-reverse;
-        margin: 100px;
-        margin-top: 150px;
 
-    }
-    
     #box-1 {
         min-height: 40%;
         min-width: 40%;
@@ -480,21 +488,15 @@ form {
         height: auto;
     }
     
-    #box-2 {
-        margin-top: 200px;
-        margin-right: 50px;
-        min-width: 40%; 
-    }
-    
     #slogan-1 {
-        text-align: left;
-        white-space: nowrap;
         font-size: 6vw;
+        margin-right: 250px;
+        margin-top: 200px;
+        text-align: left;
     }
     
     #slogan-2 {
         text-align: left;
-        white-space: nowrap;
         font-size: 6vw; 
     }
 
