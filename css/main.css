@@ -8,6 +8,8 @@ body {
     font-family: Helvetica;
 }
 
+/* For Mobile between 360px and 599px */
+
 /* Navbar */
 
 header {
@@ -72,8 +74,22 @@ header {
     display: block;
 }
 
-.sign-in-button {
-    
+.sign-in-desktop {
+   visibility: hidden;
+}
+
+/* Grid */
+
+.container {
+    min-height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "section-1"
+      "section-2"
+      "section-3"
+      "footer";
 }
 
 /* Features section */
@@ -81,21 +97,25 @@ header {
 #features {
     background-color: white;
     grid-area: section-1;
-    /* height: 500px; */
 }
 
-#section-1 {
+.section-1 {
     display: flex;
     flex-direction: column;
     margin: 52px;
     margin-top: 150px;
     text-align: center;
-    /* background-color: red; */
+}
+
+.box-1 {
+    width: auto;
+    height: auto;
+    align-self: center;
 }
 
 .juice-pic {
-    min-width: 70%;
-    max-width: 50%;
+    min-width: 65%;
+    max-width: 60%;
     height: auto;
 } 
 
@@ -104,16 +124,16 @@ header {
     height: 50%;
 }
 
-#slogan-1 {
+.slogan-1 {
     color: #0091AD;
-    font-size: 5.5vh;
+    font-size: 6vh;
     font-weight: 400;
     margin-top: 20px;
 }
 
-#slogan-2 {
+.slogan-2 {
     color: #B24646;
-    font-size: 5.5vh;
+    font-size: 6vh;
     font-weight: 400;
     margin-top: 8px;
 }
@@ -123,7 +143,6 @@ header {
 #why {
     background-color: #0091AD;
     grid-area: section-2;
-    height: 720px;
 }
 
 .section-2 {
@@ -131,28 +150,24 @@ header {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 50px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 35px;
     color: white;
 }
 
-#box-4 {
-    margin-top: 50px;
-}
-
-#box-5 {
-    margin-top: 50px;
+.description-space {
+    margin-top: 40px;
 }
 
 .product-description {
-    margin-top: 7px;
+    margin-top: 4px;
 }
 
-#box-6 {
+.box-6 {
     width: auto;
     height: auto;
-    margin-top: 60px;
+    align-self: center;
 }
 
 .juicer-pic {
@@ -168,22 +183,22 @@ header {
     grid-area: section-3;
 }
 
-#section-3 {
+.section-3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 5px;
 }
 
 .card {
-flex: grow;
- text-align: center;
- background-color: white;
- margin-top: 50px;
- width: 80vw;
- height: 39vh;
- box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
- border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    width: 80vw;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin-top: 40px;
 }
 
 .title {
@@ -194,7 +209,7 @@ flex: grow;
 .card-info {
     margin-top: 25px;
     list-style: none;
-    font-size: 7vw;
+    /* font-size: 7vw; */
     font-weight: 600;
     color: #4F6283;
 }
@@ -208,14 +223,16 @@ flex: grow;
 }
 
 .card-button { 
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
     background-color: #B24646; 
     border: none;
     color: white;
-    width: 100%;
+    width: 80%;
     height: 5vh;
-    font-size: 7vw;
+    font-size: x-large;
+    cursor: pointer;
 }
 
 .card-button:hover {
@@ -223,19 +240,9 @@ flex: grow;
     background-color: #9C2F2F;
 }
 
-/* Footer Section*/
-
 footer {
     grid-area: footer;
-    flex-direction: row;
-}
-
-/* .social-media-links {
-    flex-direction: row;
-} */
-
-.social-media-links a {
-    text-decoration: none;
+    align-items: center;
 }
 
 .social-links {
@@ -246,40 +253,34 @@ footer {
 
 .contact-us {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 20px;
     color: #0091AD;
 }
 
 .contact-info {
     font-size: large;
     font-weight: 600;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .contact-link {
     color: #B24646;
-}
-
-.container {
-    min-height: 1000px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-      "section-1"
-      "section-2"
-      "section-3"
-      "footer";
+    cursor: pointer;
 }
 
 /* Sign In Page */
 
 .logo-2 {
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 .logo-sign-in {
-    text-align: center;
     color: #B24646;
+    padding-top: 100px;
     margin-top: 100px;
     font-size: 35px;
     font-weight: 500;
@@ -287,7 +288,8 @@ footer {
 }
 
 .sign-in {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-top: 40px;
     font-weight: 500;
 }
@@ -304,10 +306,6 @@ form {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-}
-
-#email {
-    /* height: 50px; */
 }
 
 .email-password {
@@ -355,20 +353,22 @@ form {
     height: 20px;
 }
 
-/* .social-icons {
-    float: right;
-} */
-
 /* For Mobile under 400px */
 
 @media only screen and (max-width: 270px) { 
 
-    #slogan-1 {
+    /* Features section */
+
+    .slogan-1 {
         font-size: 3vh;
     }
 
-    #slogan-2 {
+    .slogan-2 {
         font-size: 3vh;
+    }
+
+    .card-button { 
+        font-size: 6vw;
     }
 }
 
@@ -376,15 +376,16 @@ form {
 
 @media only screen and (max-width: 360px) { 
 
-    #slogan-1 {
+    /* Features section */
+
+    .slogan-1 {
         font-size: 4vh;
     }
 
-    #slogan-2 {
+    .slogan-2 {
         font-size: 4vh;
     }
 }
-
 
 /* For Tablets */
 @media only screen and (min-width: 600px) { 
@@ -392,21 +393,6 @@ form {
     .forgotten-password {
         color: #B24646;
     }
-
-    #section-1 {
-        display: flex;
-        flex-direction: row-reverse;
-        margin: 100px;
-        margin-top: 150px;
-
-    }
-
-    .section-2 {
-        display: flex;
-        flex-direction: row-reverse;
-        color: white;
-    }
-    
 }
 
 /* For Desktop */
@@ -444,17 +430,7 @@ form {
         display: none;
     }
 
-    /* Main section */
-
-    #features {
-        height: 750px;
-    }
-
-    #pricing {
-        height: 700px;
-    }
-
-    .sign-in-button {
+    .sign-in-desktop {
         visibility: visible;
         border-radius: 4px;
         background-color: #B24646; 
@@ -468,48 +444,11 @@ form {
         transition: transform .9s;
     }    
 
-    .sign-in-button:hover {
+    .sign-in-desktop:hover {
         transform: scale(1.1);
     }
 
     .sign-in-mobile {
         display: none !important;
     }
-    
-
-    #box-1 {
-        min-height: 40%;
-        min-width: 40%;
-        margin-bottom: 30px;
-    }
-    
-    .juice-pic {
-        max-width: 100%;
-        height: auto;
-    }
-    
-    #slogan-1 {
-        font-size: 6vw;
-        margin-right: 250px;
-        margin-top: 200px;
-        text-align: left;
-    }
-    
-    #slogan-2 {
-        text-align: left;
-        font-size: 6vw; 
-    }
-
-    /* Footer */
-
-    .contact-us {
-        text-align: left;
-        margin-left: 100px;
-    }
-
-    .contact-info {
-        font-size: x-large;
-        font-weight: 500;
-    }
-
 }
