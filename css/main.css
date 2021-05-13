@@ -406,32 +406,55 @@ form {
 
     .section-1 {
         flex-direction: row-reverse;
-        padding-top: 40px;
-    }
-
-    .box-2 {
-        margin-top: 40px;
+        align-items: stretch;
+        /* background-color: red; */
+        margin-right: 80px;
+        margin-bottom: 60px;
+        margin-top: 70px;
     }
 
     .box-1 {
-        margin-top: -80px;
+        display: flex;
+        align-items: stretch;
+        width: 50vw;
+        align-self: flex-end;
     }
 
-    .slogan-1, .slogan-2 {
+    .box-2 {
+        display: flex;
+        flex-flow: row wrap;
         text-align: left;
-        font-size: 6vh;
+        /* align-self: left; */
+        /* background-color: yellow; */
+        margin-left: 30px;
+        padding-bottom: 20px;
+    }
+
+    .slogan-1 {
+        font-size: 6.5vw;
+        margin-top: 180px;
+    }
+    
+    .slogan-2 {
+        font-size: 6.5vw;
     }
 
     .juice-pic {
-        min-width: 10%;
         max-width: 100%;
-        height: auto;
-    } 
+    }
 
     /* Sign In Page */
 
     .forgotten-password {
         color: #B24646;
+    }
+}
+
+/* For Tablets */
+@media only screen and (min-width: 800px) { 
+
+    .section-1 {
+        margin-top: 100px;
     }
 }
 
@@ -491,5 +514,40 @@ form {
 
     .sign-in-mobile {
         display: none !important;
+    }
+
+    /* Features Section */
+
+    .section-1 {
+        margin-bottom: 70px;
+        margin-top: 200px;
+    }
+
+    .box-1 {
+        /* background-color: red; */
+        margin-right: 30px;
+    }
+
+    .box-2 {
+        /* background-color: yellow; */
+    }
+
+    .juice-pic {
+        max-width: 100%;
+    }
+
+    .slogan-1 {
+        font-size: 6.5vw;
+        margin-top: 230px;
+    }
+    
+    .slogan-2 {
+        font-size: 6.5vw;
+    }
+
+    /* Sign In Page */
+
+    .forgotten-password {
+        color: #B24646;
     }
 }
