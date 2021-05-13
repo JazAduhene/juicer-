@@ -119,7 +119,7 @@ header {
     height: auto;
 } 
 
-#box-2 {
+.box-2 {
     width: 100%;
     height: 50%;
 }
@@ -379,16 +379,56 @@ form {
     /* Features section */
 
     .slogan-1 {
-        font-size: 4vh;
+        font-size: 5vh;
     }
 
     .slogan-2 {
-        font-size: 4vh;
+        font-size: 5vh;
     }
 }
 
 /* For Tablets */
 @media only screen and (min-width: 600px) { 
+
+    /* Navbar */
+
+    .navbar  {
+        padding-left: 60px;
+        padding-top: 40px;
+    }
+    
+    .hamburger {
+        padding-right: 60px;
+        padding-top: 40px;
+    }
+
+    /* Features section */
+
+    .section-1 {
+        flex-direction: row-reverse;
+        padding-top: 40px;
+    }
+
+    .box-2 {
+        margin-top: 40px;
+    }
+
+    .box-1 {
+        margin-top: -80px;
+    }
+
+    .slogan-1, .slogan-2 {
+        text-align: left;
+        font-size: 6vh;
+    }
+
+    .juice-pic {
+        min-width: 10%;
+        max-width: 100%;
+        height: auto;
+    } 
+
+    /* Sign In Page */
 
     .forgotten-password {
         color: #B24646;
@@ -396,12 +436,13 @@ form {
 }
 
 /* For Desktop */
+
 @media only screen and (min-width: 1000px) {
     .navbar {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
-        height: 140px;
+        height: 100px;
         align-items: center;
         padding-right: 80px;
         padding-left: 80px;
